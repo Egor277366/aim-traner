@@ -18,7 +18,7 @@ public class TargetShooter : MonoBehaviour
 
                 if(target != null)
                 {
-                    Destroy(target.gameObject);
+                    target.Hit();
                 }
             }
         }
