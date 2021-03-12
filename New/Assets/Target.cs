@@ -6,6 +6,6 @@ public class Target : MonoBehaviour
 {
   public void Hit()
     {
-        transform.position = TargetBounds.Instanse.GetRandomPosition();
-    }
+        transform.position = TargetBounds.Instanse.GetRandomPosition(); 
+    } 
 }
