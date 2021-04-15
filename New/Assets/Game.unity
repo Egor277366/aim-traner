@@ -199,7 +199,6 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &63404819
@@ -225,7 +224,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 962672289}
-  - component: {fileID: 962672290}
   m_Layer: 0
   m_Name: CameraHolder
   m_TagString: Untagged
@@ -248,20 +246,6 @@ Transform:
   m_Father: {fileID: 1818270975}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &962672290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962672288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 014d5857cce2a3e4d9daf27fa3f345c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraHolder: {fileID: 962672289}
-  mouseSensitivity: 1
 --- !u!1 &994834629
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,7 +304,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
 --- !u!223 &994834632
 Canvas:
   m_ObjectHideFlags: 0
@@ -374,6 +357,7 @@ GameObject:
   - component: {fileID: 1004150624}
   - component: {fileID: 1004150623}
   - component: {fileID: 1004150622}
+  - component: {fileID: 1004150626}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -457,6 +441,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1004150626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004150621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de92cda4d2338db4e8dffa7de92f4926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1705517245
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,8 +570,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 8, z: 3}
-  m_Center: {x: -0.71790695, y: 1.5232251, z: 0.79412913}
+  m_Size: {x: 5, y: 5, z: 6}
+  m_Center: {x: 0, y: 1.5232251, z: 0.79412913}
 --- !u!4 &1746102490
 Transform:
   m_ObjectHideFlags: 0
@@ -584,7 +580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746102487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 0, z: 2.61}
+  m_LocalPosition: {x: 0.7, y: 0, z: 3.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -648,7 +644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 014d5857cce2a3e4d9daf27fa3f345c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraHolder: {fileID: 0}
+  cameraHolder: {fileID: 962672289}
   mouseSensitivity: 3
 --- !u!1 &1891053453
 GameObject:

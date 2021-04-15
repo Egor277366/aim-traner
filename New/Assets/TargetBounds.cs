@@ -8,6 +8,7 @@ public class TargetBounds : MonoBehaviour
 
     void Awake()
     {
+          
         Instanse = this;
     }
     
@@ -15,6 +16,7 @@ public class TargetBounds : MonoBehaviour
 
     public Vector3 GetRandomPosition()
     {
+     
         Vector3 center = col.center + transform.position;
 
         float minX = center.x - col.size.x / 2f;

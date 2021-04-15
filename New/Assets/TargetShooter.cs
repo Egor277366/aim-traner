@@ -15,9 +15,9 @@ public class TargetShooter : MonoBehaviour
             if(Physics.Raycast(ray, out RaycastHit hit))
             {
                 Target target = hit.collider.gameObject.GetComponent<Target>();
-
-                if(target != null)
-                {
+                //
+                if (target != null)
+                {                   
                     target.Hit();
                 }
             }
